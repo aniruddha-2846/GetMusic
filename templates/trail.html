@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>GetMusic</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="header">
+        <h1>GetMusic</h1>
+        <h2>Simplest way to download your music</h2>
+      </div>
+    </header>
+    <main>
+      <form action="/runpyfile/" method="post">
+        <!-- {% csrf_token %} -->
+        <div id="input-field">
+          <input
+            type="text"
+            id="input-string"
+            name="inputString"
+            placeholder="Enter the name of the song"
+            required
+          />
+          <input id="submit-btn" type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

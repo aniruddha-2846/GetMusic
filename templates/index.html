@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>GetMusic</title>
+    <style>
+      .main_heading,.input_field{
+        display: flex;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;     /* Vertical centering */
+        /* height: 100vh;           Optional: Center within viewport */
+}
+    </style>
+  </head>
+  <body>
+    <p>Simplest way to download your music</p>
+    <div class="main_heading">
+      <p class="mh_txt">Get Music</p>
+    </div>
+
+    <div class="input_field">
+      <form action="/runpyfile/" method="post">
+        {% csrf_token %}
+        <label for="inputString">Enter the name of the song</label>
+        <input type="text" id="inputString" name="inputString" required />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    font-family: 'Kanit',sans-serif;
+    background-color: #352F44;
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FAF0E6;
+}
+
+#header{
+    font-size: 28px;
+}
+
+#main-heading{
+    font-size: 24px;
+}
+
+#input-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FAF0E6;
+    font-size: 18px;  
+    row-gap: 10px;
+}
+
+#input-string, #submit-btn{
+    font-family: 'Kanit',sans-serif;
+    background-color: #B9B4C7; 
+    border: 2px #5C5470 solid;
+    border-radius: 8px;
+}
+
+#input-string{
+    font-size: 20px;
+    padding: 5px;
+    width: 30vw;
+    height: 5vh;
+}
